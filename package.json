@@ -1,0 +1,39 @@
+{
+  "name": "a-session",
+  "version": "1.0.0",
+  "description": "all session",
+  "keywords": [
+    "login"
+  ],
+  "main": "build/aSession.js",
+  "typings": [
+    "build/index.d.ts",
+    "typings"
+  ],
+  "scripts": {
+    "build": "webpack --display-error-details"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
+    "ts-loader": "^5.3.1",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.7.4",
+    "webpack": "^4.28.0",
+    "webpack-cli": "^3.3.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
